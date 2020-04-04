@@ -1,0 +1,2 @@
+rootProject.name='Mysql PhP connect'
+include ':app'
