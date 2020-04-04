@@ -43,11 +43,6 @@ public  ProgressBar bar;
         });
     }
 
-
-    {
-
-    }
-
     private void register(String username, String password, String email)  {
         String url="http://anfaas-com.stackstaging.com/UserRegistration/register.php?username="
                 +  username+
@@ -74,7 +69,7 @@ public  ProgressBar bar;
             Log.i("yes",url);
             try {
       Document doc=          Jsoup.connect(url).get();
-          //      Toast.makeText(MainActivity.this, doc.toString(), Toast.LENGTH_SHORT).show();
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
